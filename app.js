@@ -23,8 +23,7 @@ app.get('/anecdotes', (_req, res) => {
 })
 
 app.post('/anecdotes', (req, res) => {
-  console.log('request',req)
-  const nextId = Math.max(anecdotes.map(a => a.id)) + 1
+  const nextId = Math.max(...anecdotes.map(a => a.id)) + 1
   const newAnecdote = { id: nextId, content: req.body.content, votes: 0 }
 
   anecdotes.push(newAnecdote)
@@ -43,7 +42,6 @@ app.put('/anecdotes/:id', (req, res) => {
   }
 
   const updatedAnecdote = {...anecdoteToUpdate, votes: req.body.votes}
-  console.log({ updatedAnecdote })
 
   anecdotes = anecdotes.map(a => {
     if (a.id === updatedAnecdote.id) {
