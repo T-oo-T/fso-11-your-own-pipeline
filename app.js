@@ -2,6 +2,8 @@ import express from 'express'
 import anecdotesData from './db.js'
 const app = express()
 
+let { anecdotes } = anecdotesData
+
 // get the port from env variable
 const PORT = process.env.PORT || 5000
 
@@ -17,7 +19,7 @@ app.get('/health', (_req, res) => {
 })
 
 app.get('/anecdotes', (_req, res) => {
-  res.json( anecdotesData.anecdotes )
+  res.json( anecdotes )
 })
 
 app.listen(PORT, () => {
