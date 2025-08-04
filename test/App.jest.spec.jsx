@@ -6,7 +6,7 @@ import '@testing-library/jest-dom'
 import App from '../src/App'
 import store from '../src/store'
 
-
+// Added just minimal amount of tests to demonstrate CI/CD features, since this course isn't about testing
 jest.mock('axios')
 describe('<App />', () => {
   it('fetches data', async () => {
