@@ -1,4 +1,4 @@
-{
+export default {
   "anecdotes": [
     {
       "content": "If it hurts, do it more often",
