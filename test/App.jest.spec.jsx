@@ -1,3 +1,5 @@
+/* eslint-disable */
+// TODO: fix eslint jest requires
 import React from 'react'
 import { Provider } from 'react-redux'
 import { render, screen } from '@testing-library/react'
