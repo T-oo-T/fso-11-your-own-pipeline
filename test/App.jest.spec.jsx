@@ -1,8 +1,5 @@
-/* eslint-disable */
-// TODO: fix eslint jest requires
-import React from 'react'
 import { Provider } from 'react-redux'
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import axiosMock from 'axios'
 import { act } from 'react-dom/test-utils'
 import '@testing-library/jest-dom'
@@ -18,6 +15,6 @@ describe('<App />', () => {
       render(<Provider store={store}><App /></Provider>)
     })
     expect(axiosMock.get).toHaveBeenCalledTimes(1)
-    expect(axiosMock.get).toHaveBeenCalledWith('/anecdotesz')
+    expect(axiosMock.get).toHaveBeenCalledWith('/anecdotes')
   })
 })
