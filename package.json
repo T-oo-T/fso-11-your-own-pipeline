@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "server": "json-server -p3001 --watch db.json",
     "start-prod": "node app.js",
+    "start-e2e": "npm run build && npm run start-prod",
     "test": "jest"
   },
   "dependencies": {
