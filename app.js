@@ -19,8 +19,19 @@ app.get('/health', (_req, res) => {
 })
 
 app.get('/anecdotes', (_req, res) => {
-  res.json( anecdotes )
+  res.json(anecdotes)
 })
+
+app.post('/anecdotes', (req, res) => {
+  console.log('request',req)
+  const nextId = Math.max(anecdotes.map(a => a.id)) + 1
+  const newAnecdote = { id: nextId, content: req.body.content, votes: 0 }
+
+  anecdotes.push(newAnecdote)
+
+  res.json(newAnecdote)
+})
+
 
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console

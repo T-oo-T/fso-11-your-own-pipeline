@@ -3,106 +3,31 @@ export default {
     {
       "content": "If it hurts, do it more often",
       "votes": 34,
-      "id": "47145"
+      "id": 1
     },
     {
       "content": "Adding manpower to a late software project makes it later!",
       "votes": 24,
-      "id": "21149"
+      "id": 2
     },
     {
       "content": "The first 90 percent of the code accounts for the first 10 percent of the development time...The remaining 10 percent of the code accounts for the other 90 percent of the development time.",
-      "id": "69581",
+      "id": 3,
       "votes": 0
     },
     {
       "content": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
-      "id": "36975",
+      "id": 4,
       "votes": 0
     },
     {
       "content": "Premature optimization is the root of all evil.",
-      "id": "25170",
+      "id": 5,
       "votes": 0
     },
     {
       "content": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.",
-      "id": "98312",
-      "votes": 0
-    },
-    {
-      "id": "255b",
-      "content": "test",
-      "votes": 0
-    },
-    {
-      "id": "1ce5",
-      "content": "test",
-      "votes": 0
-    },
-    {
-      "id": "736a",
-      "content": "test",
-      "votes": 0
-    },
-    {
-      "id": "d8b3",
-      "content": "test",
-      "votes": 0
-    },
-    {
-      "id": "7534",
-      "content": "ddd",
-      "votes": 0
-    },
-    {
-      "id": "751f",
-      "content": "tesssst",
-      "votes": 0
-    },
-    {
-      "id": "1496",
-      "content": "werrwerw",
-      "votes": 0
-    },
-    {
-      "id": "1fc1",
-      "content": "asdad",
-      "votes": 0
-    },
-    {
-      "id": "e127",
-      "content": "df",
-      "votes": 0
-    },
-    {
-      "id": "34e1",
-      "content": "asdasdas",
-      "votes": 0
-    },
-    {
-      "content": "qeqweq",
-      "votes": 8,
-      "id": "954a"
-    },
-    {
-      "id": "f995",
-      "content": "dfssdfsd",
-      "votes": 0
-    },
-    {
-      "id": "54f3",
-      "content": "dfgdfgdfgdfg",
-      "votes": 0
-    },
-    {
-      "id": "79a1",
-      "content": "342343fddfs",
-      "votes": 0
-    },
-    {
-      "id": "6b48",
-      "content": "sdf",
+      "id": 6,
       "votes": 0
     }
   ]
