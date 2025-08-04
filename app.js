@@ -36,8 +36,6 @@ app.put('/anecdotes/:id', (req, res) => {
   const anecdoteToUpdate = anecdotes.find(a => a.id === Number(req.params.id))
 
   if (!anecdoteToUpdate) {
-    console.log('req.params.id',req.params.id)
-    console.log('anecdotes',anecdotes)
     res.status(404).send()
   }
 
