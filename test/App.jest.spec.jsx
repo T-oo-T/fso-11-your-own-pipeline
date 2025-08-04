@@ -18,6 +18,6 @@ describe('<App />', () => {
       render(<Provider store={store}><App /></Provider>)
     })
     expect(axiosMock.get).toHaveBeenCalledTimes(1)
-    expect(axiosMock.get).toHaveBeenCalledWith('/anecdotes')
+    expect(axiosMock.get).toHaveBeenCalledWith('/anecdotesz')
   })
 })

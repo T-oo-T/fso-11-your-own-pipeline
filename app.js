@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(express.static('dist'))
 
 app.get('/version', (_req, res) => {
-  res.send('3') // change this string to ensure a new version deployed
+  res.send('4') // change this string to ensure a new version deployed
 })
 
 app.get('/health', (_req, res) => {
