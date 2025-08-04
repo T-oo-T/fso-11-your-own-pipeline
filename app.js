@@ -33,6 +33,30 @@ app.post('/anecdotes', (req, res) => {
 })
 
 
+app.put('/anecdotes/:id', (req, res) => {
+  const anecdoteToUpdate = anecdotes.find(a => a.id === Number(req.params.id))
+
+  if (!anecdoteToUpdate) {
+    console.log('req.params.id',req.params.id)
+    console.log('anecdotes',anecdotes)
+    res.status(404).send()
+  }
+
+  const updatedAnecdote = {...anecdoteToUpdate, votes: req.body.votes}
+  console.log({ updatedAnecdote })
+
+  anecdotes = anecdotes.map(a => {
+    if (a.id === updatedAnecdote.id) {
+      return updatedAnecdote
+    } else {
+      return a
+    }
+  })
+
+  res.json(updatedAnecdote)
+})
+
+
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console
   console.log(`server started on port ${PORT}`)
